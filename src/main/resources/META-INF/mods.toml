@@ -1,18 +1,22 @@
 modLoader="javafml"
-loaderVersion="[28,)"
+loaderVersion="[31,)"
 
 [[mods]]
 modId="countrycraft"
 version="1.0.0"
 displayName="Country Craft"
-credits="Created using mod maker MCreator - https://mcreator.net/about"
-displayURL="https://mcreator.net"
-authors="NorthWestTrees Gaming, MCreator"
+credits="Minecraft, Forge, MCreator"
+displayURL="https://www.northwesttreesgaming.com/country-craft"
+logoFile="logo.png"
+authors="NorthWestTrees & MarionxOnce28"
+description='''
+Country Craft is a farming and food Minecraft modification mad using MCreator.  We got inspired by Starbound's farming and food system and decided to make a Minecraft modification similar to what Starbound has but using our own textures and models while making it still feel like a Minecraft modification.
+'''
 
 [[dependencies.countrycraft]]
     modId="minecraft"
     mandatory=true
-    versionRange="[1.14.4]"
+    versionRange="[1.15.2]"
     ordering="NONE"
     side="BOTH"
 

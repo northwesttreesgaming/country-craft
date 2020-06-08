@@ -115,12 +115,22 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "diamond_plow"
+    },
+    {
+      "name": "PlowedDirt",
+      "type": "block",
+      "sortid": 11,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "plowed_dirt"
     }
   ],
   "variable_elements": [],
   "sound_elements": [],
   "language_map": {
     "en_us": {
+      "block.countrycraft.plowed_dirt": "Plowed Dirt",
       "itemGroup.tabcountrycraftitems": "Country Craft Items",
       "item.countrycraft.iron_plow": "Iron Plow",
       "item.countrycraft.diamond_plow": "Diamond Plow",
@@ -134,16 +144,18 @@
     "modid": "countrycraft",
     "modName": "Country Craft",
     "version": "1.0.0",
-    "author": "NorthWestTrees Gaming, MCreator",
-    "websiteURL": "https://mcreator.net",
+    "description": "Country Craft is a farming and food Minecraft modification mad using MCreator.  We got inspired by Starbound\u0027s farming and food system and decided to make a Minecraft modification similar to what Starbound has but using our own textures and models while making it still feel like a Minecraft modification.",
+    "author": "NorthWestTrees \u0026 MarionxOnce28",
+    "websiteURL": "https://www.northwesttreesgaming.com/country-craft",
     "disableForgeVersionCheck": true,
     "serverSideOnly": false,
+    "modPicture": "logo",
     "requiredMods": [],
     "dependencies": [],
     "dependants": [],
     "mcreatorDependencies": [],
-    "currentGenerator": "forge-1.14.4",
-    "credits": "Created using mod maker MCreator - https://mcreator.net/about",
+    "currentGenerator": "forge-1.15.2",
+    "credits": "Minecraft, Forge, MCreator",
     "modElementsPackage": "net.mcreator.countrycraft",
     "lockBaseModFiles": false
   },

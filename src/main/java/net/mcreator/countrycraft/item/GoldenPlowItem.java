@@ -63,9 +63,9 @@ public class GoldenPlowItem extends CountrycraftModElements.ModElement {
 			@Override
 			public void inventoryTick(ItemStack itemstack, World world, Entity entity, int slot, boolean selected) {
 				super.inventoryTick(itemstack, world, entity, slot, selected);
-				int x = (int) entity.posX;
-				int y = (int) entity.posY;
-				int z = (int) entity.posZ;
+				int x = (int) entity.getPosX();
+				int y = (int) entity.getPosY();
+				int z = (int) entity.getPosZ();
 				if (selected) {
 					java.util.HashMap<String, Object> $_dependencies = new java.util.HashMap<>();
 					$_dependencies.put("itemstack", itemstack);
