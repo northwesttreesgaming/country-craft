@@ -1,0 +1,151 @@
+{
+  "id_map": {},
+  "mod_elements": [
+    {
+      "name": "CountryCraftBlocks",
+      "type": "tab",
+      "sortid": 1,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "CountryCraftItems",
+      "type": "tab",
+      "sortid": 2,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "PlowItemRightClickedOnBlock",
+      "type": "procedure",
+      "sortid": 3,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "plow_item_right_clicked_on_block",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "int"
+          },
+          {
+            "name": "y",
+            "type": "int"
+          },
+          {
+            "name": "z",
+            "type": "int"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "WoodenPlow",
+      "type": "tool",
+      "sortid": 3,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "wooden_plow"
+    },
+    {
+      "name": "PlowItemToolInHandTick",
+      "type": "procedure",
+      "sortid": 6,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "plow_item_tool_in_hand_tick",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          }
+        ]
+      }
+    },
+    {
+      "name": "StonePlow",
+      "type": "tool",
+      "sortid": 7,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "stone_plow"
+    },
+    {
+      "name": "IronPlow",
+      "type": "tool",
+      "sortid": 8,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "iron_plow"
+    },
+    {
+      "name": "GoldenPlow",
+      "type": "tool",
+      "sortid": 9,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "golden_plow"
+    },
+    {
+      "name": "DiamondPlow",
+      "type": "tool",
+      "sortid": 10,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "diamond_plow"
+    }
+  ],
+  "variable_elements": [],
+  "sound_elements": [],
+  "language_map": {
+    "en_us": {
+      "itemGroup.tabcountrycraftitems": "Country Craft Items",
+      "item.countrycraft.iron_plow": "Iron Plow",
+      "item.countrycraft.diamond_plow": "Diamond Plow",
+      "item.countrycraft.golden_plow": "Golden Plow",
+      "item.countrycraft.wooden_plow": "Wooden Plow",
+      "itemGroup.tabcountrycraftblocks": "Country Craft Blocks",
+      "item.countrycraft.stone_plow": "Stone Plow"
+    }
+  },
+  "workspaceSettings": {
+    "modid": "countrycraft",
+    "modName": "Country Craft",
+    "version": "1.0.0",
+    "author": "NorthWestTrees Gaming, MCreator",
+    "websiteURL": "https://mcreator.net",
+    "disableForgeVersionCheck": true,
+    "serverSideOnly": false,
+    "requiredMods": [],
+    "dependencies": [],
+    "dependants": [],
+    "mcreatorDependencies": [],
+    "currentGenerator": "forge-1.14.4",
+    "credits": "Created using mod maker MCreator - https://mcreator.net/about",
+    "modElementsPackage": "net.mcreator.countrycraft",
+    "lockBaseModFiles": false
+  },
+  "mcreatorVersion": 202000322116
+}

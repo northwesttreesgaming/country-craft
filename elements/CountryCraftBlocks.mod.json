@@ -1,0 +1,11 @@
+{
+  "_fv": 8,
+  "_type": "tab",
+  "definition": {
+    "name": "Country Craft Blocks",
+    "icon": {
+      "value": "Blocks.MELON_BLOCK"
+    },
+    "showSearch": false
+  }
+}
