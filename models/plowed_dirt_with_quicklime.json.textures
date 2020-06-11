@@ -1,0 +1,12 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "side": "plowed_dirt_with_quicklime",
+        "top": "plowed_dirt_with_quicklime_top",
+        "bottom": "plowed_dirt_with_quicklime_bottom"
+      },
+      "name": "default"
+    }
+  }
+}

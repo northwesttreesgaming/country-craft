@@ -1,12 +1,10 @@
 {
-  "parent": "block/cube",
+  "parent": "countrycraft:custom/plowed_dirt",
   "textures": {
-    "down": "countrycraft:blocks/plowed_dirt_bottom",
-    "up": "countrycraft:blocks/plowed_dirt_top",
-    "north": "countrycraft:blocks/plowed_dirt",
-    "east": "countrycraft:blocks/plowed_dirt",
-    "south": "countrycraft:blocks/plowed_dirt",
-    "west": "countrycraft:blocks/plowed_dirt",
-    "particle": "countrycraft:blocks/plowed_dirt_bottom"
+    "all": "countrycraft:blocks/plowed_dirt",
+    "particle": "countrycraft:blocks/plowed_dirt",
+    "side": "countrycraft:blocks/plowed_dirt",
+    "top": "countrycraft:blocks/plowed_dirt_top",
+    "bottom": "countrycraft:blocks/plowed_dirt_bottom"
   }
 }

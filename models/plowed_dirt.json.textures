@@ -1,0 +1,12 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "side": "plowed_dirt",
+        "top": "plowed_dirt_top",
+        "bottom": "plowed_dirt_bottom"
+      },
+      "name": "default"
+    }
+  }
+}

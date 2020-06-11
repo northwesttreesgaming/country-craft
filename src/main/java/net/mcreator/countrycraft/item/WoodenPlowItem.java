@@ -15,10 +15,8 @@ import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.entity.ai.attributes.AttributeModifier;
 import net.minecraft.entity.SharedMonsterAttributes;
 import net.minecraft.entity.LivingEntity;
-import net.minecraft.entity.Entity;
 import net.minecraft.block.BlockState;
 
-import net.mcreator.countrycraft.procedures.PlowItemToolInHandTickProcedure;
 import net.mcreator.countrycraft.procedures.PlowItemRightClickedOnBlockProcedure;
 import net.mcreator.countrycraft.itemgroup.CountryCraftItemsItemGroup;
 import net.mcreator.countrycraft.CountrycraftModElements;
@@ -30,7 +28,7 @@ public class WoodenPlowItem extends CountrycraftModElements.ModElement {
 	@ObjectHolder("countrycraft:wooden_plow")
 	public static final Item block = null;
 	public WoodenPlowItem(CountrycraftModElements instance) {
-		super(instance, 3);
+		super(instance, 1);
 	}
 
 	@Override
@@ -58,19 +56,6 @@ public class WoodenPlowItem extends CountrycraftModElements.ModElement {
 					PlowItemRightClickedOnBlockProcedure.executeProcedure($_dependencies);
 				}
 				return retval;
-			}
-
-			@Override
-			public void inventoryTick(ItemStack itemstack, World world, Entity entity, int slot, boolean selected) {
-				super.inventoryTick(itemstack, world, entity, slot, selected);
-				int x = (int) entity.getPosX();
-				int y = (int) entity.getPosY();
-				int z = (int) entity.getPosZ();
-				if (selected) {
-					java.util.HashMap<String, Object> $_dependencies = new java.util.HashMap<>();
-					$_dependencies.put("itemstack", itemstack);
-					PlowItemToolInHandTickProcedure.executeProcedure($_dependencies);
-				}
 			}
 		}.setRegistryName("wooden_plow"));
 	}

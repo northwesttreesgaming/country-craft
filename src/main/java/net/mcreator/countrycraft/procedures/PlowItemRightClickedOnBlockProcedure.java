@@ -23,10 +23,12 @@ import net.minecraft.block.BlockState;
 import net.mcreator.countrycraft.block.PlowedDirtBlock;
 import net.mcreator.countrycraft.CountrycraftModElements;
 
+import java.util.Random;
+
 @CountrycraftModElements.ModElement.Tag
 public class PlowItemRightClickedOnBlockProcedure extends CountrycraftModElements.ModElement {
 	public PlowItemRightClickedOnBlockProcedure(CountrycraftModElements instance) {
-		super(instance, 3);
+		super(instance, 14);
 	}
 
 	public static void executeProcedure(java.util.HashMap<String, Object> dependencies) {
@@ -60,7 +62,9 @@ public class PlowItemRightClickedOnBlockProcedure extends CountrycraftModElement
 		int z = (int) dependencies.get("z");
 		ItemStack itemstack = (ItemStack) dependencies.get("itemstack");
 		World world = (World) dependencies.get("world");
-		if (((world.getBlockState(new BlockPos((int) x, (int) y, (int) z))).getBlock() == Blocks.FARMLAND.getDefaultState().getBlock())) {
+		if ((((world.getBlockState(new BlockPos((int) x, (int) y, (int) z))).getBlock() == Blocks.GRASS_BLOCK.getDefaultState()
+				.getBlock()) == ((world.getBlockState(new BlockPos((int) x, (int) y, (int) z)))
+						.getBlock() == Blocks.DIRT.getDefaultState().getBlock()))) {
 			if (entity instanceof LivingEntity) {
 				((LivingEntity) entity).swingArm(Hand.MAIN_HAND);
 			}
@@ -76,9 +80,23 @@ public class PlowItemRightClickedOnBlockProcedure extends CountrycraftModElement
 					return false;
 				}
 			}.checkGamemode(entity)))) {
-				((itemstack)).setDamage((int) 1);
+				{
+					ItemStack _ist = (itemstack);
+					if (_ist.attemptDamageItem((int) 1, new Random(), null)) {
+						_ist.shrink(1);
+						_ist.setDamage(0);
+					}
+				}
+			}
+			if (((((itemstack)).getDamage()) == 0)) {
+				world.playSound((PlayerEntity) null, x, y, z,
+						(net.minecraft.util.SoundEvent) ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("entity.item.break")),
+						SoundCategory.NEUTRAL, (float) 1, (float) 0.9);
 			}
 			if ((!(world.isRemote))) {
+				if (entity instanceof LivingEntity) {
+					((LivingEntity) entity).swingArm(Hand.MAIN_HAND);
+				}
 				world.playSound((PlayerEntity) null, x, y, z,
 						(net.minecraft.util.SoundEvent) ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("item.hoe.till")),
 						SoundCategory.NEUTRAL, (float) 1, (float) 1);
@@ -92,7 +110,7 @@ public class PlowItemRightClickedOnBlockProcedure extends CountrycraftModElement
 					TileEntity _tileEntity = world.getTileEntity(_bp);
 					BlockState _bs = world.getBlockState(_bp);
 					if (_tileEntity != null)
-						_tileEntity.getTileData().putBoolean("countrycraftBlockHasQuickLime", (false));
+						_tileEntity.getTileData().putBoolean("countrycraftBlockHasQuicklime", (false));
 					world.notifyBlockUpdate(_bp, _bs, _bs, 3);
 				}
 				if (!world.isRemote) {

@@ -6,14 +6,14 @@ import net.minecraftforge.api.distmarker.Dist;
 
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.ItemGroup;
-import net.minecraft.block.Blocks;
 
+import net.mcreator.countrycraft.block.LimestoneBlock;
 import net.mcreator.countrycraft.CountrycraftModElements;
 
 @CountrycraftModElements.ModElement.Tag
 public class CountryCraftBlocksItemGroup extends CountrycraftModElements.ModElement {
 	public CountryCraftBlocksItemGroup(CountrycraftModElements instance) {
-		super(instance, 1);
+		super(instance, 12);
 	}
 
 	@Override
@@ -22,7 +22,7 @@ public class CountryCraftBlocksItemGroup extends CountrycraftModElements.ModElem
 			@OnlyIn(Dist.CLIENT)
 			@Override
 			public ItemStack createIcon() {
-				return new ItemStack(Blocks.MELON, (int) (1));
+				return new ItemStack(LimestoneBlock.block, (int) (1));
 			}
 
 			@OnlyIn(Dist.CLIENT)

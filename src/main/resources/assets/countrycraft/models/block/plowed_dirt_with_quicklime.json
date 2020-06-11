@@ -1,0 +1,10 @@
+{
+  "parent": "countrycraft:custom/plowed_dirt_with_quicklime",
+  "textures": {
+    "all": "countrycraft:blocks/plowed_dirt_with_quicklime",
+    "particle": "countrycraft:blocks/plowed_dirt_with_quicklime",
+    "side": "countrycraft:blocks/plowed_dirt_with_quicklime",
+    "top": "countrycraft:blocks/plowed_dirt_with_quicklime_top",
+    "bottom": "countrycraft:blocks/plowed_dirt_with_quicklime_bottom"
+  }
+}

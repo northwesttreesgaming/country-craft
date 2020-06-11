@@ -61,13 +61,13 @@ import java.util.List;
 import java.util.Collections;
 
 @CountrycraftModElements.ModElement.Tag
-public class PlowedDirtBlock extends CountrycraftModElements.ModElement {
-	@ObjectHolder("countrycraft:plowed_dirt")
+public class PlowedDirtWithFertilizerAndQuicklimeBlock extends CountrycraftModElements.ModElement {
+	@ObjectHolder("countrycraft:plowed_dirt_with_fertilizer_and_quicklime")
 	public static final Block block = null;
-	@ObjectHolder("countrycraft:plowed_dirt")
+	@ObjectHolder("countrycraft:plowed_dirt_with_fertilizer_and_quicklime")
 	public static final TileEntityType<CustomTileEntity> tileEntityType = null;
-	public PlowedDirtBlock(CountrycraftModElements instance) {
-		super(instance, 7);
+	public PlowedDirtWithFertilizerAndQuicklimeBlock(CountrycraftModElements instance) {
+		super(instance, 23);
 		FMLJavaModLoadingContext.get().getModEventBus().register(this);
 	}
 
@@ -80,7 +80,8 @@ public class PlowedDirtBlock extends CountrycraftModElements.ModElement {
 
 	@SubscribeEvent
 	public void registerTileEntity(RegistryEvent.Register<TileEntityType<?>> event) {
-		event.getRegistry().register(TileEntityType.Builder.create(CustomTileEntity::new, block).build(null).setRegistryName("plowed_dirt"));
+		event.getRegistry().register(
+				TileEntityType.Builder.create(CustomTileEntity::new, block).build(null).setRegistryName("plowed_dirt_with_fertilizer_and_quicklime"));
 	}
 
 	@Override
@@ -92,7 +93,7 @@ public class PlowedDirtBlock extends CountrycraftModElements.ModElement {
 		public CustomBlock() {
 			super(Block.Properties.create(Material.EARTH).sound(SoundType.GROUND).hardnessAndResistance(0.6f, 0.6f).lightValue(0).harvestLevel(0)
 					.harvestTool(ToolType.SHOVEL).notSolid());
-			setRegistryName("plowed_dirt");
+			setRegistryName("plowed_dirt_with_fertilizer_and_quicklime");
 		}
 
 		@Override
@@ -206,7 +207,7 @@ public class PlowedDirtBlock extends CountrycraftModElements.ModElement {
 
 		@Override
 		public ITextComponent getDefaultName() {
-			return new StringTextComponent("plowed_dirt");
+			return new StringTextComponent("plowed_dirt_with_fertilizer_and_quicklime");
 		}
 
 		@Override
@@ -221,7 +222,7 @@ public class PlowedDirtBlock extends CountrycraftModElements.ModElement {
 
 		@Override
 		public ITextComponent getDisplayName() {
-			return new StringTextComponent("Plowed Dirt");
+			return new StringTextComponent("Plowed Dirt With Fertilizer And Quicklime");
 		}
 
 		@Override

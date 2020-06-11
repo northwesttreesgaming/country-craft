@@ -1,0 +1,10 @@
+{
+  "parent": "countrycraft:custom/plowed_dirt_with_fertilizer",
+  "textures": {
+    "all": "countrycraft:blocks/plowed_dirt_with_fertilizer",
+    "particle": "countrycraft:blocks/plowed_dirt_with_fertilizer",
+    "side": "countrycraft:blocks/plowed_dirt_with_fertilizer",
+    "top": "countrycraft:blocks/plowed_dirt_with_fertilizer_top",
+    "bottom": "countrycraft:blocks/plowed_dirt_with_fertilizer_bottom"
+  }
+}

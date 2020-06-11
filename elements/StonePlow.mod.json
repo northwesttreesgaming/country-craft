@@ -22,9 +22,6 @@
     "repairItems": [],
     "onRightClickedOnBlock": {
       "name": "PlowItemRightClickedOnBlock"
-    },
-    "onItemInUseTick": {
-      "name": "PlowItemToolInHandTick"
     }
   }
 }

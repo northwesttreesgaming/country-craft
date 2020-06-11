@@ -41,7 +41,7 @@ public class LimestoneCobblestoneBlock extends CountrycraftModElements.ModElemen
 	@ObjectHolder("countrycraft:limestone_cobblestone")
 	public static final Block block = null;
 	public LimestoneCobblestoneBlock(CountrycraftModElements instance) {
-		super(instance, 21);
+		super(instance, 11);
 	}
 
 	@Override
