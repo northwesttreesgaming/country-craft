@@ -1,0 +1,26 @@
+{
+  "group": "countrycraft",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "01",
+    "23"
+  ],
+  "key": {
+    "0": {
+      "item": "countrycraft:limestone_cobblestone"
+    },
+    "1": {
+      "item": "countrycraft:limestone_cobblestone"
+    },
+    "2": {
+      "item": "countrycraft:limestone_cobblestone"
+    },
+    "3": {
+      "item": "countrycraft:limestone_cobblestone"
+    }
+  },
+  "result": {
+    "item": "countrycraft:limestone",
+    "count": 4
+  }
+}

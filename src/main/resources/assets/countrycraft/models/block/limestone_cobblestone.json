@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "countrycraft:blocks/limestone_cobblestone",
+    "up": "countrycraft:blocks/limestone_cobblestone",
+    "north": "countrycraft:blocks/limestone_cobblestone",
+    "east": "countrycraft:blocks/limestone_cobblestone",
+    "south": "countrycraft:blocks/limestone_cobblestone",
+    "west": "countrycraft:blocks/limestone_cobblestone",
+    "particle": "countrycraft:blocks/limestone_cobblestone"
+  }
+}

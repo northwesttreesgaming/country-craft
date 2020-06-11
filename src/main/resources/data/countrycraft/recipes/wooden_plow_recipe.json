@@ -1,0 +1,24 @@
+{
+  "group": "countrycraft",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "0",
+    "1",
+    "2"
+  ],
+  "key": {
+    "0": {
+      "item": "minecraft:wooden_hoe"
+    },
+    "1": {
+      "item": "minecraft:stick"
+    },
+    "2": {
+      "tag": "minecraft:planks"
+    }
+  },
+  "result": {
+    "item": "countrycraft:wooden_plow",
+    "count": 1
+  }
+}

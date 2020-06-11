@@ -1,0 +1,12 @@
+{
+  "group": "countrycraft",
+  "type": "minecraft:blasting",
+  "experience": 1,
+  "cookingtime": 100,
+  "ingredient": {
+    "item": "countrycraft:limestone_cobblestone"
+  },
+  "result": {
+    "item": "countrycraft:quicklime"
+  }
+}

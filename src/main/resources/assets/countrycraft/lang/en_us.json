@@ -1,10 +1,13 @@
 {
   "block.countrycraft.plowed_dirt": "Plowed Dirt",
+  "block.countrycraft.limestone": "Limestone",
   "itemGroup.tabcountrycraftitems": "Country Craft Items",
   "item.countrycraft.iron_plow": "Iron Plow",
   "item.countrycraft.diamond_plow": "Diamond Plow",
   "item.countrycraft.golden_plow": "Golden Plow",
   "item.countrycraft.wooden_plow": "Wooden Plow",
   "itemGroup.tabcountrycraftblocks": "Country Craft Blocks",
-  "item.countrycraft.stone_plow": "Stone Plow"
+  "item.countrycraft.stone_plow": "Stone Plow",
+  "block.countrycraft.limestone_cobblestone": "Limestone Cobblestone",
+  "item.countrycraft.quicklime": "Quicklime"
 }
